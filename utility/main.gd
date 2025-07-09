@@ -106,6 +106,13 @@ func spawn_free_agent(point : Vector2i, stats: Dictionary, facing: int = 0,is_pl
 	agents[point] = agent
 	return agent
 	
+func make_new_character(steam_id, steam_name):
+	var new_agent = Util.free_agent_scene.instantiate()
+	agent_parent.add_child(new_agent)
+	Steamworks.lobby_agents[steam_id] = new_agent
+	new_agent.steam_id =steam_id
+	new_agent.steam_name = steam_name
+	
 func delete_agent(agent : Agent):
 	agents.erase(agent.point)
 	if agent in agents.values():

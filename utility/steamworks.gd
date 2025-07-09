@@ -52,6 +52,9 @@ func read_p2p_packet():
 		var readable_data: Dictionary = bytes_to_var(packet_code.decompress_dynamic(-1, FileAccess.COMPRESSION_GZIP))
 		print("Packet: %s" % readable_data)
 		#todo: actually interpret packet here
+		if lobby_agents.has(packet_sender):
+			var pos = Vector2(readable_data.x,readable_data.y)
+			lobby_agents[packet_sender].position = pos
 
 func send_p2p_packet(this_target: int, packet_data: Dictionary):
 	var send_type: int = Steam.P2P_SEND_RELIABLE
@@ -129,6 +132,12 @@ func _on_lobby_joined(this_lobby_id: int, _permissions: int, _locked: bool, resp
 	if response == Steam.CHAT_ROOM_ENTER_RESPONSE_SUCCESS:
 		lobby_id = this_lobby_id
 		get_lobby_members()
+		#make new agents
+		for member in lobby_members:
+			if member.steam_id == steam_id:
+				continue
+			Util.main.make_new_character(member.steam_id,member.steam_name)
+			
 		make_p2p_handshake()
 	else:
 		var fail_reason: String
@@ -172,11 +181,7 @@ func _on_lobby_chat_update(this_lobby_id: int, change_id: int, making_change_id:
 	var changer_name : String = Steam.getFriendPersonaName(change_id)
 	if chat_state == Steam.CHAT_MEMBER_STATE_CHANGE_ENTERED:
 		print("%s has joined the lobby." % changer_name)
-		var new_agent = Util.free_agent_scene.instantiate()
-		Util.main.agent_parent.add_child(new_agent)
-		lobby_agents[change_id] = new_agent
-		new_agent.steam_id = change_id
-		new_agent.steam_name = changer_name
+		Util.main.make_new_character(change_id,changer_name)
 	elif chat_state == Steam.CHAT_MEMBER_STATE_CHANGE_LEFT:
 		print("%s has left the lobby." % changer_name)
 		if lobby_agents.has(change_id):

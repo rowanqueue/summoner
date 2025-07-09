@@ -6,6 +6,7 @@ class_name FreeAgent
 var steam_id : int
 var steam_name : String
 
+var last_sent_pos : Vector2
 
 func _ready() -> void:
 
@@ -29,9 +30,19 @@ func _process(delta: float) -> void:
 	else:
 		body.position = Vector2.ZERO
 	point = Util.real_to_grid(position)
+	
 	if debug_player:
+		send_position()
 		return
 	rich_text_label.text = steam_name
+	
+
+func send_position():
+	if last_sent_pos.distance_to(position) < 0.5:
+		return
+	last_sent_pos = position
+	var pos_data : Dictionary = {"x":position.x,"y":position.y}
+	Steamworks.send_p2p_packet(0, pos_data)
 
 func move(vel : Vector2):
 	vel = vel.normalized()*speed;
