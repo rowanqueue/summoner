@@ -1,6 +1,7 @@
 extends ChoiceMenu
 
 func get_options():
+	
 	choices.clear()
 	choices.append([])
 	for _tile in Progress.tiles:

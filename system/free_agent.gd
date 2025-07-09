@@ -7,6 +7,7 @@ var steam_id : int
 var steam_name : String
 
 var last_sent_pos : Vector2
+var next_send_time : float
 
 func _ready() -> void:
 
@@ -32,7 +33,9 @@ func _process(delta: float) -> void:
 	point = Util.real_to_grid(position)
 	
 	if debug_player:
-		send_position()
+		next_send_time-= delta
+		if next_send_time < 0:
+			send_position()
 		return
 	rich_text_label.text = steam_name
 	
@@ -41,6 +44,7 @@ func _process(delta: float) -> void:
 func send_position():
 	if last_sent_pos.distance_to(position) < 0.5:
 		return
+	next_send_time = 0.2
 	last_sent_pos = position
 	var pos_data : Dictionary = {"type":"pos","x":position.x,"y":position.y}
 	Steamworks.send_p2p_packet(0, pos_data)

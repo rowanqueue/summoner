@@ -23,6 +23,7 @@ func _ready() -> void:
 		close()
 		
 func open() -> void:
+	move_to_front()
 	active = true
 	visible = true
 	get_options()

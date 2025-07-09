@@ -154,6 +154,13 @@ func Clear() -> void:
 	tiles.clear()
 	agents.clear()
 	player.queue_free()
+func ClearMap():
+	for tile in tiles.values():
+		tile.queue_free()
+	for agent in agents.values():
+		agent.queue_free()
+	tiles.clear()
+	agents.clear()
 #endregion
 
 func display_total_time(_seconds : int = -1) -> String:
@@ -181,19 +188,21 @@ func display_total_time(_seconds : int = -1) -> String:
 #region multiplayer
 func send_map_over(change_id: int):
 	var map_data:Dictionary = {"type":"map","tiles":[]}
-	for tile_p in tiles:
-		var _data = {
-			"x":tile_p.x,
-			"y":tile_p.y,
-			"type":tiles[tile_p].tile_type
-		}
-		map_data.tiles.append(_data)
+	for tile in tiles.values():
+		map_data.tiles.append(tile.Save())
+	for agent in agents.values():
+		if agent.debug_player:
+			continue
+		map_data.agents.append(agent.Save())
 	Steamworks.send_p2p_packet(change_id,map_data)
 	
 func read_map(map_data:Dictionary):
 	#todo: replace this with Clear when you handle agents
-	for tile in tiles.values():
-		tile.queue_free()
-	for _tile in map_data.tiles:
-		place_tile(Vector2i(_tile.x,_tile.y),_tile.type)
+	ClearMap()
+	for tile_data in map_data.tiles:
+		var tile : Tile = place_tile(Vector2i(tile_data.point.x,tile_data.point.y),tile_data.tile_type)
+		tile.Load(tile_data)
+	for agent_data in map_data.agents:
+		var agent : Agent = spawn_agent(Vector2i(agent_data.point.x,agent_data.point.y),agent_data.stats,agent_data.facing)
+		agent.Load(agent_data)
 #endregion
