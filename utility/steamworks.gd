@@ -62,7 +62,7 @@ func read_p2p_packet():
 				"tile":
 					Util.main.read_tile(readable_data)
 				"tile_delete":
-					Util.main.read_tile_delete(readable_data)
+					Util.main.read_delete_tile(readable_data)
 				"spawn":
 					Util.main.read_spawn(readable_data)
 

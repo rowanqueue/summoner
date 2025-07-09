@@ -224,7 +224,6 @@ func building_update():
 	#todo: delete tiles
 	if Input.is_action_just_pressed("right_click"):
 		hovered_tile.mark_to_demolish()
-		Util.main.send_tile(hovered_tile)
 	if Input.is_action_just_pressed("click"):
 		if hovered_tile is Splitter:
 			var sub_pos : Vector2 = Util.mouse_pos-Util.grid_to_real(Util.mouse_grid_pos)

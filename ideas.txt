@@ -26,8 +26,11 @@ todo before testing:
 	-- they send data packets for the following:
 		+ moving
 		+ editing tiles (inventory or building tbh)
-		- deleting tiles
-		- spawning agent
+		+ deleting tiles
+		+ spawning agent
+		- research!!
+		- inventory god rest my soul
+	-- players get custom colors :(
 	- ghost item system? maybe think of that later lol
 	- rethink how much tiles should cost (if they have their own items)
 	- copy and paste!!!
