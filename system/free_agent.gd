@@ -1,7 +1,24 @@
 extends Agent
 
 class_name FreeAgent
+@onready var rich_text_label: RichTextLabel = $RichTextLabel
 
+var steam_id : int
+var steam_name : String
+
+
+func _ready() -> void:
+
+	age_bar.get_parent().queue_free()
+	body.modulate = Color.hex(0x6464ff)
+	speed = 5
+	reach = 3
+	if debug_player:
+		if starting_point != Vector2i.ZERO:
+			point = starting_point
+	else:
+		body.modulate = Color.VIOLET
+	position = Util.grid_to_real(point)
 
 func _process(delta: float) -> void:
 	if state == AgentState.Working:
@@ -14,6 +31,7 @@ func _process(delta: float) -> void:
 	point = Util.real_to_grid(position)
 	if debug_player:
 		return
+	rich_text_label.text = steam_name
 
 func move(vel : Vector2):
 	vel = vel.normalized()*speed;

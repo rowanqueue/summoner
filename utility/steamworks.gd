@@ -10,7 +10,7 @@ var lobby_vote_kick: bool = false
 var steam_id: int = 0
 var steam_username: String = ""
 
-var lobby_agents : Dictionary[int,]
+var lobby_agents : Dictionary[int,FreeAgent]
 
 func _ready() -> void:
 	initialize_steam()
@@ -172,8 +172,17 @@ func _on_lobby_chat_update(this_lobby_id: int, change_id: int, making_change_id:
 	var changer_name : String = Steam.getFriendPersonaName(change_id)
 	if chat_state == Steam.CHAT_MEMBER_STATE_CHANGE_ENTERED:
 		print("%s has joined the lobby." % changer_name)
+		var new_agent = Util.free_agent_scene.instantiate()
+		Util.main.agent_parent.add_child(new_agent)
+		lobby_agents[change_id] = new_agent
+		new_agent.steam_id = change_id
+		new_agent.steam_name = changer_name
 	elif chat_state == Steam.CHAT_MEMBER_STATE_CHANGE_LEFT:
 		print("%s has left the lobby." % changer_name)
+		if lobby_agents.has(change_id):
+			var agent = lobby_agents[change_id]
+			agent.queue_free()
+			lobby_agents.erase(change_id)
 	elif chat_state == Steam.CHAT_MEMBER_STATE_CHANGE_KICKED:
 		print("%s has been kicked from the lobby." % changer_name)
 	get_lobby_members()
