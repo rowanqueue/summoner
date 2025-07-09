@@ -6,6 +6,7 @@ class_name FreeAgent
 var steam_id : int
 var steam_name : String
 
+var proper_pos:Vector2
 var last_sent_pos : Vector2
 var next_send_time : float
 
@@ -38,6 +39,14 @@ func _process(delta: float) -> void:
 			send_position()
 		return
 	rich_text_label.text = steam_name
+	#not the player
+	if proper_pos.distance_to(position) < 0.5:
+		position = proper_pos
+		return
+	var diff = proper_pos-position
+	position += (proper_pos-position)*0.1*delta*100
+	
+	body.rotation = lerp_angle(body.rotation,diff.angle(),0.25)
 	
 
 #region multiplayer
@@ -49,9 +58,8 @@ func send_position():
 	var pos_data : Dictionary = {"type":"pos","x":position.x,"y":position.y}
 	Steamworks.send_p2p_packet(0, pos_data)
 func place_position(pos):
-	var diff = pos-position
-	position = pos
-	body.rotation = lerp_angle(body.rotation,diff.angle(),0.25)
+	proper_pos = pos
+	
 #endregion
 
 func move(vel : Vector2,delta :float):

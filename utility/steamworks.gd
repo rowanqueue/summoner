@@ -59,6 +59,10 @@ func read_p2p_packet():
 					lobby_agents[packet_sender].place_position(pos)
 				"map":
 					Util.main.read_map(readable_data)
+				"tile":
+					pass
+				"spawn":
+					pass
 
 func send_p2p_packet(this_target: int, packet_data: Dictionary):
 	var send_type: int = Steam.P2P_SEND_RELIABLE
@@ -186,6 +190,7 @@ func _on_lobby_chat_update(this_lobby_id: int, change_id: int, making_change_id:
 	if chat_state == Steam.CHAT_MEMBER_STATE_CHANGE_ENTERED:
 		print("%s has joined the lobby." % changer_name)
 		Util.main.make_new_character(change_id,changer_name)
+		#todo: figure out how to make only the host do this
 		Util.main.send_map_over(change_id)
 	elif chat_state == Steam.CHAT_MEMBER_STATE_CHANGE_LEFT:
 		print("%s has left the lobby." % changer_name)

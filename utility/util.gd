@@ -5,7 +5,7 @@ const tile_size : int = 64
 const hex_size : float = 48
 var hex_distance : Vector2
 
-var debug_free_build : bool = false
+var debug_free_build : bool = true
 
 var should_load : bool = false
 var should_save : bool = false

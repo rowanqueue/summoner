@@ -187,7 +187,7 @@ func display_total_time(_seconds : int = -1) -> String:
 
 #region multiplayer
 func send_map_over(change_id: int):
-	var map_data:Dictionary = {"type":"map","tiles":[]}
+	var map_data:Dictionary = {"type":"map","tiles":[],"agents":[]}
 	for tile in tiles.values():
 		map_data.tiles.append(tile.Save())
 	for agent in agents.values():
@@ -205,4 +205,17 @@ func read_map(map_data:Dictionary):
 	for agent_data in map_data.agents:
 		var agent : Agent = spawn_agent(Vector2i(agent_data.point.x,agent_data.point.y),agent_data.stats,agent_data.facing)
 		agent.Load(agent_data)
+		
+func send_tile(tile : Tile):
+	var data = tile.Save()
+	data.type = "tile"
+	Steamworks.send_p2p_packet(0,data)
+	
+func read_tile(tile_data: Dictionary):
+	var pos = Vector2i(tile_data.point.x,tile_data.point.y)
+	#todo: optimize this
+	if tiles.has(pos):
+		delete_tile(tiles[pos])
+	var tile : Tile = place_tile(Vector2i(tile_data.point.x,tile_data.point.y),tile_data.tile_type)
+	tile.Load(tile_data)
 #endregion

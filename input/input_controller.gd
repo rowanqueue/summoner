@@ -249,6 +249,7 @@ func holding_tile_update():
 			pass
 		else:
 			Util.main.place_tile(Util.mouse_grid_pos,held_tile.tile_type,held_tile.facing,true)
+			
 
 func set_held_tile(tile_type : String) -> Tile:
 	if held_tile != null:
