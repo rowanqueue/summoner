@@ -193,6 +193,7 @@ func finish_craft():
 		inventory.add(item)
 	if "spawn" in current_recipe:
 		var _agent =Util.main.tiles[point].spawn_agent(current_recipe.spawn)
+		print(_agent)
 		Util.main.send_spawn(_agent)
 	current_recipe = {}
 	state = AgentState.WaitingToMove

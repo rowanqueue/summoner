@@ -78,10 +78,10 @@ func rotate_facing(right: bool) -> void:
 		facing -= 1
 	facing %= Util.directions.size()
 
-func spawn_agent(data : Dictionary):
+func spawn_agent(data : Dictionary) -> Agent:
 	#if Util.main.agents.has(point):
 		#return
-	Util.main.spawn_agent(point,data,facing)
+	return Util.main.spawn_agent(point,data,facing)
 
 func try_build(inv : Inventory) -> Dictionary:
 	if "cost" not in data:
@@ -110,7 +110,7 @@ func build():
 func mark_to_demolish():
 	if ghost or Util.debug_free_build:
 		Util.main.delete_tile(self)
-		Util.main.send_tile(self)
+		Util.main.send_tile_delete(point)
 		return
 	to_be_demolished = true
 	Util.main.send_tile(self)

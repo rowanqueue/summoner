@@ -219,11 +219,11 @@ func read_tile(tile_data: Dictionary):
 	var tile : Tile = place_tile(Vector2i(tile_data.point.x,tile_data.point.y),tile_data.tile_type)
 	tile.Load(tile_data)
 	
-func send_delete_tile(pos: Vector2i):
+func send_tile_delete(pos: Vector2i):
 	var data =  {"type":"tile_delete","x":pos.x,"y":pos.y}
 	Steamworks.send_p2p_packet(0,data)
 	
-func read_delete_tile(data):
+func read_tile_delete(data):
 	var pos = Vector2i(data.x,data.y)
 	if tiles.has(pos):
 		delete_tile(tiles[pos])
