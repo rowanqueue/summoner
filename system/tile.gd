@@ -105,11 +105,15 @@ func try_build(inv : Inventory) -> Dictionary:
 
 func build():
 	ghost = false
+	Util.main.send_tile(self)
 	
 func mark_to_demolish():
 	if ghost or Util.debug_free_build:
 		Util.main.delete_tile(self)
+		Util.main.send_tile(self)
+		return
 	to_be_demolished = true
+	Util.main.send_tile(self)
  
 #region saving
 func Save() -> Dictionary:

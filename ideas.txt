@@ -25,7 +25,8 @@ todo before testing:
 	-- when someone enters, spawn them as a free agent
 	-- they send data packets for the following:
 		+ moving
-		- editing tiles (inventory or building tbh)
+		+ editing tiles (inventory or building tbh)
+		- deleting tiles
 		- spawning agent
 	- ghost item system? maybe think of that later lol
 	- rethink how much tiles should cost (if they have their own items)

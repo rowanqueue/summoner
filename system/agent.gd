@@ -184,6 +184,7 @@ func finish_craft():
 		Progress.try_advance_tech(current_recipe.research)
 	if "demolish" in current_recipe:
 		Util.main.delete_tile(Util.main.tiles[point])
+		Util.main.send_delete_tile(point)
 	if "build" in current_recipe:
 		Util.main.tiles[point].build()
 	for item in current_recipe.input:
@@ -191,7 +192,8 @@ func finish_craft():
 	for item in current_recipe.output:
 		inventory.add(item)
 	if "spawn" in current_recipe:
-		Util.main.tiles[point].spawn_agent(current_recipe.spawn)
+		var _agent =Util.main.tiles[point].spawn_agent(current_recipe.spawn)
+		Util.main.send_spawn(_agent)
 	current_recipe = {}
 	state = AgentState.WaitingToMove
 #endregion

@@ -123,6 +123,7 @@ func actual_player_movement(delta: float):
 			if _tile.inventory.not_empty() and player.inventory.has_space():
 				var _item : String = _tile.inventory.get_first()
 				player.inventory.add(_item)
+				Util.main.send_tile(_tile)
 				return
 	if Input.is_action_just_pressed("right_click"):
 		if player.inventory.not_empty() == false:
@@ -133,6 +134,7 @@ func actual_player_movement(delta: float):
 		if _tile.inventory.has_space():
 			var _item : String = player.inventory.get_first()
 			_tile.inventory.add(_item)
+			Util.main.send_tile(_tile)
 		return
 	
 func handle_player_movement(delta: float):
@@ -181,6 +183,7 @@ func handle_player_movement(delta: float):
 			if _tile.inventory.not_empty() and player.inventory.has_space():
 				var _item : String = _tile.inventory.get_first()
 				player.inventory.add(_item)
+				Util.main.send_tile(_tile)
 				return
 	if Input.is_action_just_pressed("right_click"):
 		if Util.mouse_grid_pos != player.point:
@@ -195,6 +198,7 @@ func handle_player_movement(delta: float):
 		if _tile.inventory.has_space():
 			var _item : String = player.inventory.get_first()
 			_tile.inventory.add(_item)
+			Util.main.send_tile(_tile)
 		return
 
 func building_update():
@@ -213,11 +217,14 @@ func building_update():
 	#todo: let you rotate placed tiles
 	if Input.is_action_just_pressed("rotate_right") and not Input.is_action_just_pressed("rotate_left"):
 		hovered_tile.rotate_facing(true)
+		Util.main.send_tile(hovered_tile)
 	if Input.is_action_just_pressed("rotate_left"):
 		hovered_tile.rotate_facing(false)
+		Util.main.send_tile(hovered_tile)
 	#todo: delete tiles
 	if Input.is_action_just_pressed("right_click"):
 		hovered_tile.mark_to_demolish()
+		Util.main.send_tile(hovered_tile)
 	if Input.is_action_just_pressed("click"):
 		if hovered_tile is Splitter:
 			var sub_pos : Vector2 = Util.mouse_pos-Util.grid_to_real(Util.mouse_grid_pos)

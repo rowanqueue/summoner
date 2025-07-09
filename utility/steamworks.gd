@@ -61,8 +61,10 @@ func read_p2p_packet():
 					Util.main.read_map(readable_data)
 				"tile":
 					Util.main.read_tile(readable_data)
+				"tile_delete":
+					Util.main.read_tile_delete(readable_data)
 				"spawn":
-					pass
+					Util.main.read_spawn(readable_data)
 
 func send_p2p_packet(this_target: int, packet_data: Dictionary):
 	var send_type: int = Steam.P2P_SEND_RELIABLE
