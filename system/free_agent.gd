@@ -41,7 +41,7 @@ func send_position():
 	if last_sent_pos.distance_to(position) < 0.5:
 		return
 	last_sent_pos = position
-	var pos_data : Dictionary = {"x":position.x,"y":position.y}
+	var pos_data : Dictionary = {"type":"pos","x":position.x,"y":position.y}
 	Steamworks.send_p2p_packet(0, pos_data)
 
 func move(vel : Vector2):

@@ -53,8 +53,10 @@ func read_p2p_packet():
 		print("Packet: %s" % readable_data)
 		#todo: actually interpret packet here
 		if lobby_agents.has(packet_sender):
-			var pos = Vector2(readable_data.x,readable_data.y)
-			lobby_agents[packet_sender].position = pos
+			match readable_data.type:
+				"pos":
+					var pos = Vector2(readable_data.x,readable_data.y)
+					lobby_agents[packet_sender].position = pos
 
 func send_p2p_packet(this_target: int, packet_data: Dictionary):
 	var send_type: int = Steam.P2P_SEND_RELIABLE
