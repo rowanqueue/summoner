@@ -1,0 +1,65 @@
+{
+	"tiles":{
+		"default":[
+			{
+				"name":"",
+			},
+			{
+				"name": "hex",
+				"visual_scale": 0.75,
+				"cost":["rock"],
+			},
+			{
+				"name":"altar",
+				
+			}
+		],
+		"movement":[
+			{
+				"name":"arrow",
+				"can_rotate": true,
+				"cost":["branch"],
+			},
+			{
+				"name":"splitter",
+				"cost":["branch"],
+			},
+			{
+				"name":"dropoff",
+				"cost":["fiber","fiber"],
+			},
+			{
+				"name":"pickup",
+				"cost":["fiber","fiber"],
+			}
+		],
+		"spawner":[
+			{
+				"name":"sigil",
+				"cost":["leaf","leaf"],
+				"can_rotate": true,
+			},
+			{
+				"name":"kill",
+				"cost":["branch"]
+			}
+		],
+		"nature":[
+			{
+				"name":"bush",
+				"visual_scale": 0.5,
+				"cost":["leaf"],
+			},
+			{
+				"name":"tree",
+				"visual_scale": 0.5,
+				"cost":["branch"],
+			},
+			{
+				"name":"rock",
+				"visual_scale": 0.5,
+				"cost":["rock"],
+			},
+		]
+	}
+}

@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1yfjq7lwvvx1"]
+
+[ext_resource type="Script" uid="uid://brfw6iefl6cbl" path="res://ui/choice_preview.gd" id="1_vfah1"]
+
+[node name="ChoicePreview" type="VBoxContainer"]
+custom_minimum_size = Vector2(60, 60)
+offset_right = 60.0
+offset_bottom = 60.0
+script = ExtResource("1_vfah1")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Button"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+bbcode_enabled = true
+text = "beebbbbbb"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

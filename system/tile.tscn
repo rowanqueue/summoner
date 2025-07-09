@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvwej0a0ikj5v"]
+
+[ext_resource type="Texture2D" uid="uid://cr81aep2fovm1" path="res://art/hex.png" id="1_7iu1q"]
+[ext_resource type="Script" uid="uid://c4ieh51fo2akw" path="res://system/tile.gd" id="1_v6wa2"]
+[ext_resource type="PackedScene" uid="uid://jey6k82jpof" path="res://system/inventory.tscn" id="3_84hkk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v6wa2"]
+radius = 116.0
+
+[node name="Tile" type="Area2D"]
+script = ExtResource("1_v6wa2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_v6wa2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_7iu1q")
+
+[node name="TypeVisual" type="Sprite2D" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -128.0
+offset_top = -128.0
+offset_right = 128.0
+offset_bottom = 128.0
+pivot_offset = Vector2(128, 128)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 60
+bbcode_enabled = true
+fit_content = true
+scroll_active = false
+autowrap_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Inventory" parent="." instance=ExtResource("3_84hkk")]
+offset_left = -64.0
+offset_top = 80.0
+offset_right = 64.0
+offset_bottom = 112.0
+scale = Vector2(2, 2)
+pivot_offset = Vector2(64, 16)

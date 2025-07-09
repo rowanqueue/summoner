@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://cwy0b1o8v7bgy"]
+
+[ext_resource type="Script" uid="uid://84eoqqdk5wpa" path="res://system/free_agent.gd" id="1_25tei"]
+[ext_resource type="Texture2D" uid="uid://d1jnbgwmeupq3" path="res://art/tiles/sprite.png" id="2_il15j"]
+[ext_resource type="Texture2D" uid="uid://cq115l408ron0" path="res://art/tiles/arrow.png" id="3_5ca5e"]
+[ext_resource type="PackedScene" uid="uid://jey6k82jpof" path="res://system/inventory.tscn" id="4_hc010"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t1vq0"]
+radius = 16.0
+
+[node name="FreeAgent" type="Area2D"]
+script = ExtResource("1_25tei")
+
+[node name="Body" type="Sprite2D" parent="."]
+modulate = Color(1, 0.25, 0.25, 1)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_il15j")
+
+[node name="Face" type="Sprite2D" parent="Body"]
+visible = false
+position = Vector2(40, 0)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("3_5ca5e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_t1vq0")
+
+[node name="Inventory" parent="." instance=ExtResource("4_hc010")]
+anchors_preset = -1
+offset_left = -64.0
+offset_top = -46.0
+offset_right = 64.0
+offset_bottom = -14.0
+pivot_offset = Vector2(64, 16)
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(11, 0, -11, 0)
+default_color = Color(0, 0, 0, 1)
+begin_cap_mode = 2
+end_cap_mode = 2
+
+[node name="AgeBar" type="Line2D" parent="Line2D"]
+points = PackedVector2Array(11, 0, -11, 0)
+width = 5.0
+begin_cap_mode = 2
+end_cap_mode = 2

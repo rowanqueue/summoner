@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://dptuwu1f3lx2y"]
+
+[ext_resource type="Texture2D" uid="uid://dp3d7cspktrt" path="res://art/Circle.png" id="1_e43lf"]
+[ext_resource type="Script" uid="uid://bsevy0p1vixb7" path="res://ui/text_button.gd" id="2_lfuj8"]
+
+[node name="TextButton" type="TextureRect"]
+self_modulate = Color(0.72, 0.72, 0.72, 1)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = -320.0
+offset_bottom = -68.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(32, 32)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_e43lf")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("2_lfuj8")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

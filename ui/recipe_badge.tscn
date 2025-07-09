@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0xb4i4ip8brt"]
+
+[ext_resource type="Script" uid="uid://dk4ye3tca62qj" path="res://ui/recipe_badge.gd" id="1_58ru6"]
+[ext_resource type="Texture2D" uid="uid://dp3d7cspktrt" path="res://art/Circle.png" id="1_ye2ox"]
+[ext_resource type="PackedScene" uid="uid://c2000ej0iqanv" path="res://ui/text_circle.tscn" id="3_xu2i5"]
+
+[node name="RecipeBadge" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -896.0
+offset_bottom = -392.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_58ru6")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+self_modulate = Color(0.36, 0.36, 0.36, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ye2ox")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Skill" parent="VBoxContainer/HBoxContainer" instance=ExtResource("3_xu2i5")]
+layout_mode = 2
+
+[node name="Tile" parent="VBoxContainer/HBoxContainer" instance=ExtResource("3_xu2i5")]
+layout_mode = 2
+
+[node name="Result" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Item" parent="VBoxContainer/Result" instance=ExtResource("3_xu2i5")]
+layout_mode = 2
+
+[node name="Input" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1

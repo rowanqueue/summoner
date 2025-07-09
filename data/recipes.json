@@ -1,0 +1,80 @@
+{
+	"items":[
+		"leaf",
+		"fiber",
+		"branch",
+		"rock",
+		"log",
+		"science_1"
+	],
+	"recipes":{
+		"harvest":[
+			{
+				"tile":"bush",
+				"output":["leaf"]
+			},
+			{
+				"tile":"rock",
+				"input":["branch"],
+				"output":["rock","rock"]
+			},
+		],
+		"default":[
+			{
+				"input":["leaf"],
+				"output":["fiber"]
+			},
+			{
+				"input":["fiber","fiber"],
+				"output":["branch"]
+			},
+			{
+				"input":["rock","branch"],
+				"output":["log"]
+			},
+			{
+				"skill":"science_1",
+				"input":["leaf","leaf","leaf","leaf"],
+				"output":["science_1"]
+			},
+			{
+				"tile":"tree",
+				"skill":"lumber",
+				"output":["branch"]
+			},
+			
+		],
+		"sprites":[
+			{
+				"tile":"sigil",
+				"input":["leaf"],
+				"spawn": {
+					"name":"grunt",
+					"color": "red",
+					"lifespan": 12.5,
+					"speed": 1,
+					"reach": 2,
+				},
+			},
+			{
+				"tile":"sigil",
+				"input":["log"],
+				"spawn": {
+					"name": "science",
+					"color":"gold",
+					"skills":["science_1"],
+					"lifespan": 14,
+					"speed": 2,
+					"reach": 2,
+				},
+			}
+		],
+		"research":[
+			{
+				"tile":"altar",
+				"input":["science_1"],
+				"research":true,
+			}
+		]
+	}
+}

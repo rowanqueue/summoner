@@ -1,0 +1,54 @@
+{
+	"techs":[
+		{
+			"name":"start",
+			"start": true,
+			"prereqs": [],
+			"cost": 0,
+			"cost_type": ["science_1"],
+			"effects":[
+				{
+					"type":"unlock-tile",
+					"tiles":["sigil","bush","hex","kill","altar"]
+				},
+			]
+		},
+		{
+			"name":"arrows",
+			"cost": 1,
+			"cost_type": ["science_1"],
+			"effects":[
+				{
+					"type":"unlock-tile",
+					"tiles":["arrow"]
+				},
+				
+			]
+		},
+		{
+			"name":"splitter",
+			"cost": 10,
+			"prereqs": ["arrows"],
+			"cost_type": ["science_1"],
+			"effects":[
+				{
+					"type":"unlock-tile",
+					"tiles":["splitter"]
+				},
+				
+			]
+		},
+		{
+			"name":"drop off",
+			"cost": 5,
+			"cost_type": ["science_1"],
+			"effects":[
+				{
+					"type":"unlock-tile",
+					"tiles":["dropoff"]
+				},
+				
+			]
+		},
+	]
+}

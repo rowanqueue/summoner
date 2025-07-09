@@ -1,0 +1,2735 @@
+{
+	"elapsedTime": 1819.78099942207,
+	"name": "me",
+	"progress": {
+
+	},
+	"version": 0.0,
+	"world": {
+		"agents": [
+			{
+				"age": 9.12370736652235,
+				"anim_duration": 0.0720779220779221,
+				"current_recipe": {
+					"id": "",
+					"input": [],
+					"output": [
+						"leaf"
+					],
+					"tile": "bush"
+				},
+				"facing": 1.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": 6.0
+				},
+				"state": 3.0,
+				"stats": {
+					"color": "red",
+					"lifespan": 12.5,
+					"name": "grunt",
+					"reach": 2.0,
+					"speed": 1.0
+				}
+			},
+			{
+				"age": 5.09939647763347,
+				"anim_duration": 0.0720779220779221,
+				"current_recipe": {
+					"id": "leaf",
+					"input": [
+						"leaf"
+					],
+					"output": [],
+					"spawn": {
+						"color": "red",
+						"lifespan": 12.5,
+						"name": "grunt",
+						"reach": 2.0,
+						"speed": 1.0
+					},
+					"tile": "sigil"
+				},
+				"facing": 2.0,
+				"inventory": {
+					"items": [
+						"leaf"
+					]
+				},
+				"point": {
+					"x": 4.0,
+					"y": 1.0
+				},
+				"state": 3.0,
+				"stats": {
+					"color": "red",
+					"lifespan": 12.5,
+					"name": "grunt",
+					"reach": 2.0,
+					"speed": 1.0
+				}
+			},
+			{
+				"age": 12.3669679220779,
+				"anim_duration": 0.312987012987013,
+				"current_recipe": {
+
+				},
+				"facing": 0.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 3.0,
+					"y": 1.0
+				},
+				"state": 1.0,
+				"stats": {
+					"color": "red",
+					"lifespan": 12.5,
+					"name": "grunt",
+					"reach": 2.0,
+					"speed": 1.0
+				}
+			},
+			{
+				"age": 0.312987012987013,
+				"anim_duration": 0.300865800865801,
+				"current_recipe": {
+
+				},
+				"facing": 1.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": 2.0
+				},
+				"state": 1.0,
+				"stats": {
+					"color": "red",
+					"lifespan": 12.5,
+					"name": "grunt",
+					"reach": 2.0,
+					"speed": 1.0
+				}
+			},
+			{
+				"age": 4.32965367965368,
+				"anim_duration": 0.288744588744589,
+				"current_recipe": {
+
+				},
+				"facing": 1.0,
+				"inventory": {
+					"items": [
+						"fiber"
+					]
+				},
+				"point": {
+					"x": 0.0,
+					"y": 4.0
+				},
+				"state": 1.0,
+				"stats": {
+					"color": "red",
+					"lifespan": 12.5,
+					"name": "grunt",
+					"reach": 2.0,
+					"speed": 1.0
+				}
+			},
+			{
+				"age": 8.34470992207792,
+				"anim_duration": 0.276623376623377,
+				"current_recipe": {
+
+				},
+				"facing": 1.0,
+				"inventory": {
+					"items": [
+						"leaf"
+					]
+				},
+				"point": {
+					"x": -4.0,
+					"y": 3.0
+				},
+				"state": 1.0,
+				"stats": {
+					"color": "red",
+					"lifespan": 12.5,
+					"name": "grunt",
+					"reach": 2.0,
+					"speed": 1.0
+				}
+			},
+			{
+				"age": 2.30042914430015,
+				"anim_duration": 0.276623376623377,
+				"current_recipe": {
+
+				},
+				"facing": 0.0,
+				"inventory": {
+					"items": [
+						"leaf"
+					]
+				},
+				"point": {
+					"x": -2.0,
+					"y": 1.0
+				},
+				"state": 1.0,
+				"stats": {
+					"color": "red",
+					"lifespan": 12.5,
+					"name": "grunt",
+					"reach": 2.0,
+					"speed": 1.0
+				}
+			},
+			{
+				"age": 2.08586258874459,
+				"anim_duration": 0.0720779220779221,
+				"current_recipe": {
+
+				},
+				"facing": 2.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -1.0,
+					"y": 8.0
+				},
+				"state": 1.0,
+				"stats": {
+					"color": "red",
+					"lifespan": 12.5,
+					"name": "grunt",
+					"reach": 2.0,
+					"speed": 1.0
+				}
+			},
+			{
+				"age": 1.07384925541125,
+				"anim_duration": 0.0601731601731602,
+				"current_recipe": {
+
+				},
+				"facing": 2.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": 5.0
+				},
+				"state": 1.0,
+				"stats": {
+					"color": "red",
+					"lifespan": 12.5,
+					"name": "grunt",
+					"reach": 2.0,
+					"speed": 1.0
+				}
+			}
+		],
+		"player": {
+			"age": 0.0,
+			"anim_duration": 1.04999227272727,
+			"current_recipe": {
+
+			},
+			"facing": 0.0,
+			"inventory": {
+				"items": []
+			},
+			"point": {
+				"x": -5.0,
+				"y": 4.0
+			},
+			"state": 0.0,
+			"stats": {
+
+			}
+		},
+		"tiles": [
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 0.0,
+					"y": 0.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 0.0,
+					"y": -2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -2.0,
+					"y": -3.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": -3.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -3.0,
+					"y": -1.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -3.0,
+					"y": -4.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": -4.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 3.0,
+					"y": -4.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": -3.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": 0.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -4.0,
+					"y": -2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -5.0,
+					"y": -5.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -2.0,
+					"y": -5.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 0.0,
+					"y": -5.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 5.0,
+					"y": -5.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 5.0,
+					"y": -4.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 5.0,
+					"y": 0.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 5.0,
+					"y": 2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -5.0,
+					"y": 0.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -5.0,
+					"y": -1.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -5.0,
+					"y": -2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -6.0,
+					"y": -6.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -1.0,
+					"y": -6.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 6.0,
+					"y": -1.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 6.0,
+					"y": 4.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 6.0,
+					"y": 6.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -6.0,
+					"y": 1.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -6.0,
+					"y": -3.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -6.0,
+					"y": -5.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -4.0,
+					"y": -7.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": -7.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": -7.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 5.0,
+					"y": -7.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 6.0,
+					"y": -7.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 7.0,
+					"y": -3.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 7.0,
+					"y": 4.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 7.0,
+					"y": 7.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -6.0,
+					"y": 7.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -7.0,
+					"y": 1.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -8.0,
+					"y": -8.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -6.0,
+					"y": -8.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -3.0,
+					"y": -8.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 3.0,
+					"y": -8.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 8.0,
+					"y": -4.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 8.0,
+					"y": -2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 8.0,
+					"y": 4.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 8.0,
+					"y": 5.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 8.0,
+					"y": 7.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -8.0,
+					"y": 3.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -8.0,
+					"y": -2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -4.0,
+					"y": -9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -3.0,
+					"y": -9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -2.0,
+					"y": -9.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 1.0,
+					"y": -9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 3.0,
+					"y": -9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 7.0,
+					"y": -9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 9.0,
+					"y": -3.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 9.0,
+					"y": 5.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 7.0,
+					"y": 9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 5.0,
+					"y": 9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 0.0,
+					"y": 9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -3.0,
+					"y": 9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -4.0,
+					"y": 9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -7.0,
+					"y": 9.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -9.0,
+					"y": 7.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -9.0,
+					"y": 6.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -9.0,
+					"y": 5.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -9.0,
+					"y": -2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -9.0,
+					"y": -4.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -9.0,
+					"y": -10.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -3.0,
+					"y": -10.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -2.0,
+					"y": -10.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 10.0,
+					"y": -6.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 10.0,
+					"y": -2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 10.0,
+					"y": 1.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 10.0,
+					"y": 5.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 6.0,
+					"y": 10.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": 10.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -3.0,
+					"y": 10.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -10.0,
+					"y": 3.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -10.0,
+					"y": 2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -10.0,
+					"y": -9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -8.0,
+					"y": -11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -7.0,
+					"y": -11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -1.0,
+					"y": -11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": -11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 9.0,
+					"y": -11.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 11.0,
+					"y": -9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 11.0,
+					"y": -7.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 11.0,
+					"y": -1.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 11.0,
+					"y": 3.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 11.0,
+					"y": 6.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 11.0,
+					"y": 10.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 10.0,
+					"y": 11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 6.0,
+					"y": 11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 3.0,
+					"y": 11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 0.0,
+					"y": 11.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -6.0,
+					"y": 11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -7.0,
+					"y": 11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -8.0,
+					"y": 11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -11.0,
+					"y": 11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -11.0,
+					"y": 10.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -11.0,
+					"y": 8.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -11.0,
+					"y": 3.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -11.0,
+					"y": 1.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -11.0,
+					"y": -6.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -11.0,
+					"y": -8.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -12.0,
+					"y": -12.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 8.0,
+					"y": -12.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 12.0,
+					"y": -12.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 12.0,
+					"y": -11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 12.0,
+					"y": -9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 12.0,
+					"y": -8.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 12.0,
+					"y": -4.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 12.0,
+					"y": 3.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 12.0,
+					"y": 8.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 12.0,
+					"y": 9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 12.0,
+					"y": 10.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 9.0,
+					"y": 12.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 8.0,
+					"y": 12.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": 12.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -12.0,
+					"y": 11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -12.0,
+					"y": 10.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -12.0,
+					"y": 6.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -12.0,
+					"y": 3.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -12.0,
+					"y": 2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -13.0,
+					"y": -13.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -10.0,
+					"y": -13.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -2.0,
+					"y": -13.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 9.0,
+					"y": -13.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 13.0,
+					"y": -12.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 13.0,
+					"y": -9.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 13.0,
+					"y": -7.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 13.0,
+					"y": -2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 13.0,
+					"y": -1.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 13.0,
+					"y": 0.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 13.0,
+					"y": 5.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 13.0,
+					"y": 9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 12.0,
+					"y": 13.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 10.0,
+					"y": 13.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 6.0,
+					"y": 13.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -1.0,
+					"y": 13.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -2.0,
+					"y": 13.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -3.0,
+					"y": 13.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -4.0,
+					"y": 13.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -11.0,
+					"y": 13.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -13.0,
+					"y": 6.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -13.0,
+					"y": 5.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -13.0,
+					"y": 4.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -13.0,
+					"y": 3.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -13.0,
+					"y": -3.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -13.0,
+					"y": -6.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -13.0,
+					"y": -8.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -12.0,
+					"y": -14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -8.0,
+					"y": -14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -7.0,
+					"y": -14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -6.0,
+					"y": -14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -5.0,
+					"y": -14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -2.0,
+					"y": -14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 7.0,
+					"y": -14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 10.0,
+					"y": -14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 11.0,
+					"y": -14.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 14.0,
+					"y": -14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 14.0,
+					"y": -12.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 14.0,
+					"y": -11.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 14.0,
+					"y": -8.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 14.0,
+					"y": -5.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 14.0,
+					"y": 9.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 13.0,
+					"y": 14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 6.0,
+					"y": 14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": 14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -4.0,
+					"y": 14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -11.0,
+					"y": 14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -12.0,
+					"y": 14.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -13.0,
+					"y": 14.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -14.0,
+					"y": 10.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -14.0,
+					"y": 8.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -14.0,
+					"y": 2.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -14.0,
+					"y": -6.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -14.0,
+					"y": -10.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -4.0,
+					"y": 1.0
+				},
+				"tile_type": "sigil"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -3.0,
+					"y": 1.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -1.0,
+					"y": 1.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 1.0,
+					"y": 1.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"facing": 3.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -2.0,
+					"y": 1.0
+				},
+				"tile_type": "sigil"
+			},
+			{
+				"facing": 1.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 0.0,
+					"y": 1.0
+				},
+				"tile_type": "sigil"
+			},
+			{
+				"facing": 1.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": 1.0
+				},
+				"tile_type": "sigil"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 0.0,
+					"y": 2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 0.0,
+					"y": 3.0
+				},
+				"tile_type": "hex"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": 2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": 3.0
+				},
+				"tile_type": "hex"
+			},
+			{
+				"inventory": {
+					"items": [
+						"fiber"
+					]
+				},
+				"point": {
+					"x": 1.0,
+					"y": 4.0
+				},
+				"tile_type": "kill"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 0.0,
+					"y": 4.0
+				},
+				"tile_type": "arrow"
+			},
+			{
+				"facing": 2.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": 4.0
+				},
+				"tile_type": "arrow"
+			},
+			{
+				"inventory": {
+					"items": [
+						"fiber"
+					]
+				},
+				"point": {
+					"x": 1.0,
+					"y": 5.0
+				},
+				"tile_type": "pickup"
+			},
+			{
+				"inventory": {
+					"items": [
+						"fiber"
+					]
+				},
+				"point": {
+					"x": 2.0,
+					"y": 5.0
+				},
+				"tile_type": "pickup"
+			},
+			{
+				"facing": 1.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 0.0,
+					"y": 5.0
+				},
+				"tile_type": "arrow"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 0.0,
+					"y": 6.0
+				},
+				"tile_type": "hex"
+			},
+			{
+				"inventory": {
+					"items": [
+						"fiber"
+					]
+				},
+				"point": {
+					"x": 0.0,
+					"y": 7.0
+				},
+				"tile_type": "kill"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 0.0,
+					"y": 8.0
+				},
+				"tile_type": "rock"
+			},
+			{
+				"inventory": {
+					"items": [
+						"branch"
+					]
+				},
+				"point": {
+					"x": 1.0,
+					"y": 8.0
+				},
+				"tile_type": "pickup"
+			},
+			{
+				"inventory": {
+					"items": [
+						"branch"
+					]
+				},
+				"point": {
+					"x": -1.0,
+					"y": 7.0
+				},
+				"tile_type": "pickup"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -1.0,
+					"y": 8.0
+				},
+				"tile_type": "splitter"
+			},
+			{
+				"inventory": {
+					"items": [
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock",
+						"rock"
+					]
+				},
+				"point": {
+					"x": -2.0,
+					"y": 8.0
+				},
+				"tile_type": "dropoff"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -3.0,
+					"y": 8.0
+				},
+				"tile_type": "arrow"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -1.0,
+					"y": 6.0
+				},
+				"tile_type": "hex"
+			},
+			{
+				"inventory": {
+					"items": [
+						"log"
+					]
+				},
+				"point": {
+					"x": -1.0,
+					"y": 5.0
+				},
+				"tile_type": "kill"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": 4.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"facing": 2.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": 5.0
+				},
+				"tile_type": "sigil"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": 2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"facing": 1.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": 1.0
+				},
+				"tile_type": "sigil"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": 3.0
+				},
+				"tile_type": "sigil"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 3.0,
+					"y": 1.0
+				},
+				"tile_type": "kill"
+			},
+			{
+				"facing": 3.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 5.0,
+					"y": 3.0
+				},
+				"tile_type": "arrow"
+			},
+			{
+				"facing": 2.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 5.0,
+					"y": 1.0
+				},
+				"tile_type": "arrow"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": 6.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"facing": 2.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 4.0,
+					"y": 7.0
+				},
+				"tile_type": "sigil"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 3.0,
+					"y": 7.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"facing": 1.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": 7.0
+				},
+				"tile_type": "arrow"
+			},
+			{
+				"facing": 2.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": 8.0
+				},
+				"tile_type": "sigil"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": 2.0,
+					"y": 9.0
+				},
+				"tile_type": "kill"
+			},
+			{
+				"facing": 2.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -2.0,
+					"y": 0.0
+				},
+				"tile_type": "arrow"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -3.0,
+					"y": 0.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"facing": 1.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -4.0,
+					"y": 0.0
+				},
+				"tile_type": "arrow"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -4.0,
+					"y": 2.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -4.0,
+					"y": 3.0
+				},
+				"tile_type": "sigil"
+			},
+			{
+				"inventory": {
+					"items": [
+						"log"
+					]
+				},
+				"point": {
+					"x": -2.0,
+					"y": 4.0
+				},
+				"tile_type": "pickup"
+			},
+			{
+				"facing": 2.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -2.0,
+					"y": 5.0
+				},
+				"tile_type": "sigil"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -2.0,
+					"y": 6.0
+				},
+				"tile_type": "kill"
+			},
+			{
+				"facing": 1.0,
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -2.0,
+					"y": 3.0
+				},
+				"tile_type": "arrow"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -4.0,
+					"y": 4.0
+				},
+				"tile_type": "kill"
+			},
+			{
+				"inventory": {
+					"items": [
+						"fiber",
+						"fiber",
+						"fiber",
+						"fiber"
+					]
+				},
+				"point": {
+					"x": -6.0,
+					"y": 4.0
+				},
+				"tile_type": "dropoff"
+			},
+			{
+				"inventory": {
+					"items": [
+						"fiber"
+					]
+				},
+				"point": {
+					"x": -6.0,
+					"y": 5.0
+				},
+				"tile_type": "pickup"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -7.0,
+					"y": 5.0
+				},
+				"tile_type": "arrow"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -5.0,
+					"y": 5.0
+				},
+				"tile_type": "splitter"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -3.0,
+					"y": 5.0
+				},
+				"tile_type": "bush"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -4.0,
+					"y": 5.0
+				},
+				"tile_type": "hex"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -5.0,
+					"y": 6.0
+				},
+				"tile_type": "hex"
+			},
+			{
+				"inventory": {
+					"items": []
+				},
+				"point": {
+					"x": -5.0,
+					"y": 7.0
+				},
+				"tile_type": "kill"
+			}
+		]
+	}
+}

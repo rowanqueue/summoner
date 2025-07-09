@@ -1,0 +1,56 @@
+- paths that make agents/player faster (go underneath tile, like concrete)
+- research to make agents stats better
+-- tiles that augment that specific agent
+-- but this research should also not make investing in new agent types a bad idea
+- hmm should there be structures that are bigger than one tile??
+- arrow types
+-- normal splitter where it just alternates clockwise between every option you want
+-- splitter that splits you based on item on that slot
+-- age based splitter
+-- "logic" where splitter can be ON|OFF depending on signal (just a boolean signal)
+--- this implies a "wire" layer where you connect stuff yuck
+- avatar doesn't follow grid
+-- has special power
+-- has to craft at workbench like in satisfactory
+- terrain challenges like rivers that only certain guys can 
+-- blue guy (frog) collects water by crossing river
+
+- crafting tree to first "science"
+-- what if each science is a different guy that has to do something (or rather that only that guy can craft it)
+-- a science pack is a guy who is summoned and then has to do that particular recipe somewhere
+
+
+todo before testing:
+	- multiplayer testing tomorrow
+	-- when someone enters, spawn them as a free agent
+	-- they send data packets for the following:
+		- moving
+		- editing tiles (inventory or building tbh)
+		- crafting
+	- ghost item system? maybe think of that later lol
+	- rethink how much tiles should cost (if they have their own items)
+	- copy and paste!!!
+	-- a way to make blueprints (ctrl+c)
+	-- a way to place blueprints (ctrl+v)
+	-- rotate entire blueprint
+	-- later save blueprint (ctrl+s)
+	
+	- mod tiles (unlocked by research)
+	--skip next tile
+	--+1 or -1 craft for next 
+	- make tech badges clearer
+	-- add description
+	-- make tile unlock with images
+	- make tech visualizer that shows all techs, like the recipe visualizer
+	- make research tree that acts as tutorial
+	-- start with sigil, bush, hex, kill, altar
+	-- unlock arrows
+	--- unlock splitter
+	-- unlock dropoff
+	-- unlock skip
+	-- later unlock bulk craft tile
+	-- later unlock item marking + ghost items
+	
+	-- unlock water agent
+	-- unlock lumber agent (can get sticks from trees)
+	- controls on screen

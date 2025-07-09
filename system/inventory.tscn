@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://jey6k82jpof"]
+
+[ext_resource type="Script" uid="uid://j7gtyken2cbo" path="res://system/inventory.gd" id="1_jsrne"]
+
+[node name="Inventory" type="Control"]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1024.0
+offset_bottom = -616.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jsrne")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+bbcode_enabled = true
+text = "Items"
+scroll_active = false
+horizontal_alignment = 1
+vertical_alignment = 1
