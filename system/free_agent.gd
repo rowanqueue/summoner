@@ -12,7 +12,7 @@ func _ready() -> void:
 
 	age_bar.get_parent().queue_free()
 	body.modulate = Color.hex(0x6464ff)
-	speed = 5
+	speed = 250
 	reach = 3
 	if debug_player:
 		if starting_point != Vector2i.ZERO:
@@ -37,15 +37,21 @@ func _process(delta: float) -> void:
 	rich_text_label.text = steam_name
 	
 
+#region multiplayer
 func send_position():
 	if last_sent_pos.distance_to(position) < 0.5:
 		return
 	last_sent_pos = position
 	var pos_data : Dictionary = {"type":"pos","x":position.x,"y":position.y}
 	Steamworks.send_p2p_packet(0, pos_data)
+func place_position(pos):
+	var diff = pos-position
+	position = pos
+	body.rotation = lerp_angle(body.rotation,diff.angle(),0.25)
+#endregion
 
-func move(vel : Vector2):
-	vel = vel.normalized()*speed;
+func move(vel : Vector2,delta :float):
+	vel = vel.normalized()*speed*delta;
 	
 	
 	position += vel

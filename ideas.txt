@@ -23,6 +23,7 @@
 todo before testing:
 	- multiplayer testing tomorrow
 	-- when someone enters, spawn them as a free agent
+	-- when you enter a lobby, get the world loaded
 	-- they send data packets for the following:
 		- moving
 		- editing tiles (inventory or building tbh)

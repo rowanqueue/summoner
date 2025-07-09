@@ -66,7 +66,7 @@ func _process(delta: float) -> void:
 		#debug.text += "\n"+str(agent.stats.name)
 	match state:
 		Util.InputState.Default:
-			handle_player_movement()
+			handle_player_movement(delta)
 			
 		Util.InputState.Building:
 			building_update()
@@ -101,7 +101,7 @@ func switch_state(new_state : Util.InputState):
 			item_menu.open()
 			
 	
-func actual_player_movement():
+func actual_player_movement(delta: float):
 	var vel = Vector2.ZERO
 	if Input.is_action_pressed("move_up"):
 		vel.y -=1;
@@ -111,7 +111,7 @@ func actual_player_movement():
 		vel.x +=1;
 	if Input.is_action_pressed("move_left"):
 		vel.x -=1;
-	player.move(vel)
+	player.move(vel,delta)
 	var mouse_too_far : bool = false
 	if abs(Util.mouse_grid_pos.x-player.point.x) > player.reach or abs(Util.mouse_grid_pos.y-player.point.y) > player.reach:
 		mouse_too_far = true
@@ -135,7 +135,7 @@ func actual_player_movement():
 			_tile.inventory.add(_item)
 		return
 	
-func handle_player_movement():
+func handle_player_movement(delta: float):
 	if Input.is_action_just_pressed("item_menu"):
 		switch_state(Util.InputState.GhostItem)
 		return
@@ -169,7 +169,7 @@ func handle_player_movement():
 				#todo: check if altar is already done or not
 				switch_state(Util.InputState.SelectingTech)
 		return
-	actual_player_movement()
+	actual_player_movement(delta)
 	return
 	if Input.is_action_just_pressed("click"):
 		if Util.mouse_grid_pos != player.point:

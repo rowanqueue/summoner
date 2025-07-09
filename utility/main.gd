@@ -177,3 +177,23 @@ func display_total_time(_seconds : int = -1) -> String:
 	
 	
 	return s
+
+#region multiplayer
+func send_map_over(change_id: int):
+	var map_data:Dictionary = {"type":"map","tiles":[]}
+	for tile_p in tiles:
+		var _data = {
+			"x":tile_p.x,
+			"y":tile_p.y,
+			"type":tiles[tile_p].tile_type
+		}
+		map_data.tiles.append(_data)
+	Steamworks.send_p2p_packet(change_id,map_data)
+	
+func read_map(map_data:Dictionary):
+	#todo: replace this with Clear when you handle agents
+	for tile in tiles.values():
+		tile.queue_free()
+	for _tile in map_data.tiles:
+		place_tile(Vector2i(_tile.x,_tile.y),_tile.type)
+#endregion
