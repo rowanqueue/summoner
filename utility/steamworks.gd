@@ -177,7 +177,7 @@ func _on_persona_change(this_steam_id: int, _flag: int):
 
 func make_p2p_handshake():
 	print("Sending P2P handshake to the lobby")
-	send_p2p_packet(0, {"message": "handshake", "from": steam_id})
+	send_p2p_packet(0, {"type":"message","message": "handshake", "from": steam_id})
 	
 func _on_lobby_chat_update(this_lobby_id: int, change_id: int, making_change_id: int, chat_state: int) -> void:
 	var changer_name : String = Steam.getFriendPersonaName(change_id)
