@@ -108,6 +108,9 @@ func build():
 	Util.main.send_tile(self)
 	
 func mark_to_demolish():
+	if tile_type == "altar":
+		if Progress.is_altar_completed(point):
+			return
 	if ghost or Util.debug_free_build:
 		Util.main.delete_tile(self)
 		Util.main.send_tile_delete(point)

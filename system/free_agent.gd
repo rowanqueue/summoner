@@ -31,7 +31,11 @@ func _process(delta: float) -> void:
 		body.position = Vector2.UP*10* sin(anim_duration*PI)
 	else:
 		body.position = Vector2.ZERO
-	point = Util.real_to_grid(position)
+	if Util.debug_hex:
+		point = Util.real_to_grid(position)
+	else:
+		point = Util.real_to_grid(position+(Vector2.ONE*0.5*Util.tile_size))
+	
 	
 	if debug_player:
 		next_send_time-= delta

@@ -53,6 +53,6 @@ static func Load():
 	Clear()
 	Util.main.time_banked = save.elapsedTime
 	Util.main.time_start_session = Time.get_unix_time_from_system()
-	Progress.Load(save.progress)
 	Util.main.Load(save.world)
+	Progress.Load(save.progress)
 	return true

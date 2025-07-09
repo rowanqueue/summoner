@@ -72,6 +72,9 @@ func _process(delta: float) -> void:
 			building_update()
 		Util.InputState.HoldingTile:
 			holding_tile_update()
+		Util.InputState.SelectingTech:
+			if Input.is_action_just_pressed("right_click"):
+				switch_state(Util.InputState.Default)
 		Util.InputState.GhostItem:
 			if Input.is_action_just_pressed("item_menu"):
 				switch_state(Util.InputState.Default)
@@ -167,7 +170,7 @@ func handle_player_movement(delta: float):
 			return
 		if player.inventory.is_empty():
 			
-			if _tile != null and _tile.tile_type == "altar":
+			if _tile != null and _tile.tile_type == "altar" and Progress.is_altar_completed(player.point) == false:
 				#todo: check if altar is already done or not
 				switch_state(Util.InputState.SelectingTech)
 		return

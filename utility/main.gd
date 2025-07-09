@@ -187,13 +187,14 @@ func display_total_time(_seconds : int = -1) -> String:
 
 #region multiplayer
 func send_map_over(change_id: int):
-	var map_data:Dictionary = {"type":"map","tiles":[],"agents":[]}
+	var map_data:Dictionary = {"type":"map","tiles":[],"agents":[],"techs":{}}
 	for tile in tiles.values():
 		map_data.tiles.append(tile.Save())
 	for agent in agents.values():
 		if agent.debug_player:
 			continue
 		map_data.agents.append(agent.Save())
+	map_data.techs = Progress.Save()
 	Steamworks.send_p2p_packet(change_id,map_data)
 	
 func read_map(map_data:Dictionary):
@@ -205,6 +206,8 @@ func read_map(map_data:Dictionary):
 	for agent_data in map_data.agents:
 		var agent : Agent = spawn_agent(Vector2i(agent_data.point.x,agent_data.point.y),agent_data.stats,agent_data.facing)
 		agent.Load(agent_data)
+	Progress.Clear()
+	Progress.Load(map_data.techs)
 		
 func send_tile(tile : Tile):
 	var data = tile.Save()
@@ -237,4 +240,14 @@ func read_spawn(agent_data: Dictionary):
 	#todo: optimize this
 	var agent : Agent = spawn_agent(Vector2i(agent_data.point.x,agent_data.point.y),agent_data.stats,agent_data.facing)
 	agent.Load(agent_data)
+	
+func send_tech_update():
+	var data = {"type":"tech"}
+	data.techs = Progress.Save()
+	Steamworks.send_p2p_packet(0,data)
+	
+func read_tech_update(data: Dictionary):
+	Progress.Clear()
+	Progress.Load(data.techs)
+		
 #endregion

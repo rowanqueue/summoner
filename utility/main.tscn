@@ -82,6 +82,11 @@ script = ExtResource("6_620td")
 layout_mode = 2
 columns = 2
 
+[node name="ColorPicker" type="ColorPicker" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_right = 298.0
+offset_bottom = 572.0
+
 [node name="Tiles" type="Node2D" parent="."]
 
 [node name="Agents" type="Node2D" parent="."]

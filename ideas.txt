@@ -28,7 +28,7 @@ todo before testing:
 		+ editing tiles (inventory or building tbh)
 		+ deleting tiles
 		+ spawning agent
-		- research!!
+		+ research!!
 		- inventory god rest my soul
 	-- players get custom colors :(
 	- ghost item system? maybe think of that later lol
