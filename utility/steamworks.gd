@@ -60,7 +60,7 @@ func read_p2p_packet():
 				"map":
 					Util.main.read_map(readable_data)
 				"tile":
-					pass
+					Util.main.read_tile(readable_data)
 				"spawn":
 					pass
 

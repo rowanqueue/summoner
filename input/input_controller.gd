@@ -248,8 +248,8 @@ func holding_tile_update():
 		if held_tile.angry_ghost:
 			pass
 		else:
-			Util.main.place_tile(Util.mouse_grid_pos,held_tile.tile_type,held_tile.facing,true)
-			
+			var _tile =Util.main.place_tile(Util.mouse_grid_pos,held_tile.tile_type,held_tile.facing,true)
+			Util.main.send_tile(_tile)
 
 func set_held_tile(tile_type : String) -> Tile:
 	if held_tile != null:
