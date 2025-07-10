@@ -15,6 +15,7 @@ enum AgentState{
 @onready var body: Sprite2D = $Body
 @onready var age_bar: Line2D = $Line2D/AgeBar
 @onready var inventory: Inventory = $Inventory
+@onready var behaviors_display: RichTextLabel = $Behaviors
 
 var point : Vector2i
 var facing : int = 3
@@ -32,6 +33,7 @@ var state : AgentState = AgentState.Idle
 var current_recipe : Dictionary
 var anim_duration : float = 0
 var age : float = 0
+var behaviors : Array[String]
 
 #debug player doesn't run this
 func setup(p : Vector2i, _stats : Dictionary):
@@ -73,7 +75,12 @@ func _process(delta: float) -> void:
 			finish_craft()
 		position = Util.grid_to_real(point) + Vector2.UP*10* sin(anim_duration*PI)
 	body.rotation = deg_to_rad(Util.angles[facing])
-	
+	behaviors_display.text = ""
+	for b in behaviors:
+		if b == "skip":
+			behaviors_display.text += "[img=36]art/tiles/"+b+".png[/img]"
+			continue
+		behaviors_display.text += b
 	if debug_player:
 		return
 	age += delta
@@ -132,6 +139,9 @@ func parse_tile(_tile : Tile):
 		try_demolishing(_tile)
 		return
 	if _tile.ghost == false:
+		if behaviors.has("skip"):
+			behaviors.erase("skip")
+			return
 		var same_inv : bool = false
 		if _tile.inventory.not_empty():
 			same_inv = _tile.inventory.is_equal(inventory)
@@ -151,6 +161,9 @@ func parse_tile(_tile : Tile):
 				inventory.try_transfer_first_to(_tile.inventory)
 			"pickup":
 				look_for_item_to_pickup()
+			"skip":
+				if same_inv:
+					behaviors.append("skip")
 			_:
 				if same_inv:
 					try_craft()
@@ -258,7 +271,8 @@ func Save() -> Dictionary:
 		"state" : state as int,
 		"anim_duration": anim_duration,
 		"current_recipe": current_recipe,
-		"inventory" : inventory.Save()
+		"inventory" : inventory.Save(),
+		"behaviors": behaviors
 	}
 	#todo: runtime stuff of moving/crafting state later etc.
 	return data
@@ -270,4 +284,6 @@ func Load(data : Dictionary) -> void:
 	state = data.state as AgentState
 	anim_duration = data.anim_duration
 	current_recipe = data.current_recipe
+	if "behaviors" in data:
+		behaviors = data.behaviors
 #endregion

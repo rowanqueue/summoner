@@ -49,4 +49,5 @@ func set_recipe(_recipe : Dictionary):
 			_item = item
 
 		_item.set_text(Data.item_names[recipe.output[i]].replace("18","36"))
-		result.add_child(_item)
+		if i > 0:
+			result.add_child(_item)

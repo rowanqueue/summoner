@@ -14,7 +14,12 @@ func _ready() -> void:
 		for c in _tech.cost_type:
 			cost.text+=Data.item_names[c]
 			done_one = true
-		effects.text = str(_tech.effects)
+		effects.text = "Unlock\n"
+		for effect in _tech.effects:
+			match effect.type:
+				"unlock-tile":
+					for tile in effect.tiles:
+						effects.text +=  "[img=36]art/tiles/"+tile+".png[/img]"
 
 
 func _on_button_pressed() -> void:

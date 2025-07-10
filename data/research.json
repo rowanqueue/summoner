@@ -9,7 +9,7 @@
 			"effects":[
 				{
 					"type":"unlock-tile",
-					"tiles":["sigil","bush","hex","kill","altar"]
+					"tiles":["sigil","bush","hex","kill","altar","skip"]
 				},
 			]
 		},

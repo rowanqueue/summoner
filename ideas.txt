@@ -21,6 +21,16 @@
 
 
 todo before testing:
+	- auto building structure
+	-- has a radius it builds in
+	-- builds using its own inventory? or you craft at that to craft a build anywhere in radius
+	- depot tile (has silo as prereq)
+	-- you put items in it (you need 1 per item type)
+	-- the only way to use these items is for building
+	--- basically when you're building, it will take from depots first
+	- silo tile
+	-- lets you store a BUNCH of one item type
+	- paths to increase speed
 	- multiplayer testing tomorrow
 	-- when someone enters, spawn them as a free agent
 	-- they send data packets for the following:
@@ -39,12 +49,10 @@ todo before testing:
 	-- rotate entire blueprint
 	-- later save blueprint (ctrl+s)
 	
-	- mod tiles (unlocked by research)
+	- behavior tiles (unlocked by research)
 	--skip next tile
+	--pick up/drop in next tile
 	--+1 or -1 craft for next 
-	- make tech badges clearer
-	-- add description
-	-- make tile unlock with images
 	- make tech visualizer that shows all techs, like the recipe visualizer
 	- make research tree that acts as tutorial
 	-- start with sigil, bush, hex, kill, altar
